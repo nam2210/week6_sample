@@ -1,5 +1,6 @@
 package com.hnam.threadandservice;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
             switch (view.getId()){
                 case R.id.btn_asynctask:
                     //todo
+                    Intent i = new Intent(MainActivity.this, AsyncTaskActivity.class);
+                    startActivity(i);
                     break;
                 case R.id.btn_thread:
                     //todo
