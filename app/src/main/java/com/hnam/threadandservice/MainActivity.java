@@ -1,5 +1,6 @@
 package com.hnam.threadandservice;
 
+import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,8 @@ import android.view.View;
 
 import com.hnam.threadandservice.asynctask.AsyncTaskActivity;
 import com.hnam.threadandservice.problem.ProblemActivity;
+import com.hnam.threadandservice.services.ServiceActivity;
+import com.hnam.threadandservice.thread.ThreadActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,11 +39,13 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
                 case R.id.btn_thread: {
-                    //todo
+                    Intent i = new Intent(MainActivity.this, ThreadActivity.class);
+                    startActivity(i);
                     break;
                 }
                 case R.id.btn_service: {
-                    //todo
+                    Intent i = new Intent(MainActivity.this, ServiceActivity.class);
+                    startActivity(i);
                     break;
                 }
             }
