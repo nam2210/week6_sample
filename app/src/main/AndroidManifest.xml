@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".AsyncTaskActivity"
+        <activity android:name=".asynctask.AsyncTaskActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".problem.ProblemActivity"
             android:screenOrientation="portrait"/>
     </application>
 

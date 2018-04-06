@@ -8,6 +8,12 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btn_problems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Problems"/>
+
+    <Button
         android:id="@+id/btn_asynctask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
